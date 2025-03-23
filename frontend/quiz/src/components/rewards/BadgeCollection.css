@@ -1,0 +1,29 @@
+.badge-collection {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+  }
+  
+  .collection-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+  }
+  
+  .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 24px;
+  }
+  
+  @media (max-width: 480px) {
+    .badges-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .badge-collection {
+      padding: 16px;
+    }
+  }

@@ -1,0 +1,168 @@
+.welcome-banner {
+    position: relative;
+    border-radius: var(--border-radius);
+    background: linear-gradient(135deg, var(--primary-color), #6c4fff);
+    color: white;
+    overflow: hidden;
+    padding: 40px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+  }
+  
+  .welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+  }
+  
+  .welcome-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    animation: slideUp 0.5s ease;
+  }
+  
+  .welcome-message {
+    font-size: 18px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+    animation: slideUp 0.6s ease;
+  }
+  
+  .banner-cta {
+    display: flex;
+    gap: 16px;
+    animation: slideUp 0.7s ease;
+  }
+  
+  .banner-button {
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    border: none;
+    outline: none;
+  }
+  
+  .banner-button.primary {
+    background-color: white;
+    color: var(--primary-color);
+  }
+  
+  .banner-button.primary:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+  }
+  
+  .banner-button.secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  .banner-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .welcome-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    z-index: 1;
+  }
+  
+  .animated-element {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .element-1 {
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: -40px;
+    right: 30px;
+    animation-name: float1;
+  }
+  
+  .element-2 {
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.15);
+    bottom: 20px;
+    right: 100px;
+    animation-name: float2;
+  }
+  
+  .element-3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 120px;
+    right: -20px;
+    animation-name: float3;
+  }
+  
+  @keyframes float1 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-15px, 15px) rotate(5deg); }
+    50% { transform: translate(0, 25px) rotate(0deg); }
+    75% { transform: translate(15px, 10px) rotate(-5deg); }
+  }
+  
+  @keyframes float2 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(15px, -15px) rotate(-5deg); }
+    50% { transform: translate(0, -20px) rotate(0deg); }
+    75% { transform: translate(-15px, -10px) rotate(5deg); }
+  }
+  
+  @keyframes float3 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-20px, 0) rotate(5deg); }
+    50% { transform: translate(-10px, 10px) rotate(10deg); }
+    75% { transform: translate(0, -10px) rotate(0deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .welcome-banner {
+      flex-direction: column;
+      padding: 30px;
+    }
+    
+    .welcome-title {
+      font-size: 28px;
+    }
+    
+    .welcome-message {
+      font-size: 16px;
+    }
+    
+    .welcome-decoration {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-cta {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .banner-button {
+      width: 100%;
+      text-align: center;
+    }
+  }

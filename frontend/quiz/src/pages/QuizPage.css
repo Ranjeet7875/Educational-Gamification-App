@@ -1,0 +1,35 @@
+.quiz-page {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .quiz-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+  }
+  
+  .quiz-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .quiz-topic {
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  .quiz-difficulty {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+  }

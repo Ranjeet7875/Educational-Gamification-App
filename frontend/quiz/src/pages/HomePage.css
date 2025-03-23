@@ -1,0 +1,167 @@
+.home-page {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    color: var(--text-secondary);
+  }
+  
+  .quick-access-section {
+    margin: 24px 0 32px;
+  }
+  
+  .quick-access-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .quick-access-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    min-width: 110px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed) ease;
+  }
+  
+  .quick-access-button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .quick-access-button i {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .home-content-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+  }
+  
+  .personalized-section {
+    animation: slideUp 0.5s ease;
+  }
+  
+  .view-all-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .view-all-link:hover {
+    text-decoration: underline;
+  }
+  
+  .home-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .trending-card, .upcoming-challenge-card {
+    animation: slideUp 0.6s ease;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+  }
+  
+  .trending-list {
+    list-style: none;
+  }
+  
+  .trending-item {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .trending-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .trending-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: color var(--transition-speed) ease;
+  }
+  
+  .trending-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .trending-title {
+    font-weight: 500;
+  }
+  
+  .trending-participants {
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  
+  .challenge-item {
+    padding: 16px;
+    background-color: rgba(74, 107, 255, 0.05);
+    border-radius: var(--border-radius);
+  }
+  
+  .challenge-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .challenge-date {
+    font-size: 14px;
+    color: var(--accent-color);
+    font-weight: 500;
+  }
+  
+  .challenge-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+  }
+  
+  .challenge-remind-btn {
+    width: 100%;
+  }
+  
+  @media (max-width: 900px) {
+    .home-content-layout {
+      grid-template-columns: 1fr;
+    }
+    
+    .home-sidebar {
+      order: -1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quick-access-buttons {
+      justify-content: center;
+    }
+    
+    .quick-access-button {
+      flex: 1 1 calc(50% - 16px);
+      max-width: calc(50% - 16px);
+    }
+  }

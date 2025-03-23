@@ -1,0 +1,132 @@
+.quiz-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 32px;
+    margin-bottom: 24px;
+    animation: slideUp 0.4s ease;
+  }
+  
+  .question-container {
+    margin-bottom: 24px;
+  }
+  
+  .question-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+  }
+  
+  .question-image-container {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .question-image {
+    max-width: 100%;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
+  .answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .answer-option {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ebebeb;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+  }
+  
+  .answer-option:hover {
+    background-color: rgba(74, 107, 255, 0.05);
+    border-color: rgba(74, 107, 255, 0.2);
+  }
+  
+  .answer-option.selected {
+    background-color: rgba(74, 107, 255, 0.1);
+    border-color: var(--primary-color);
+  }
+  
+  .answer-option.correct {
+    background-color: rgba(52, 199, 89, 0.1);
+    border-color: var(--secondary-color);
+  }
+  
+  .answer-option.incorrect {
+    background-color: rgba(255, 59, 48, 0.1);
+    border-color: var(--danger-color);
+  }
+  
+  .answer-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-right: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex-shrink: 0;
+  }
+  
+  .answer-text {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  
+  .feedback-icon {
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .answer-option.correct .feedback-icon {
+    color: var(--secondary-color);
+  }
+  
+  .answer-option.incorrect .feedback-icon {
+    color: var(--danger-color);
+  }
+  
+  .feedback-message {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .feedback-message.correct {
+    background-color: rgba(52, 199, 89, 0.1);
+    color: #1d6b3c;
+  }
+  
+  .feedback-message.incorrect {
+    background-color: rgba(255, 59, 48, 0.1);
+    color: #9a1f1f;
+  }
+  
+  @media (max-width: 480px) {
+    .quiz-card {
+      padding: 20px;
+    }
+    
+    .question-text {
+      font-size: 18px;
+    }
+    
+    .answer-option {
+      padding: 12px;
+    }
+  }
