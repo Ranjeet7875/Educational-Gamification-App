@@ -179,7 +179,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-Project Lead - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Project Lead - [@yourlinked]https://www.linkedin.com/in/ranjeet-vishwakarma-17v/) - ranvishwakarma122@gmail.com
 
 Project Link: [https://github.com/yourusername/educational-gamification-app](https://github.com/yourusername/educational-gamification-app)
 
